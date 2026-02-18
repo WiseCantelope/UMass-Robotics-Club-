@@ -118,6 +118,15 @@ body {
   color: white;
 }
 
+.card {
+  background: white;   /* keep box white */
+  color: black;        /* make text black */
+}
+
+.card h3,
+.card p {
+  color: black;
+}
 
 /* ===== Image Section ===== */
 .image-section {
