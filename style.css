@@ -11,6 +11,19 @@
   z-index: 1000;
 }
 
+.page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+  font-family: inherit;
+}
+
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
 
 body {
   margin: 0;
@@ -27,6 +40,7 @@ body {
 
 /* ===== Nav ===== */
 nav {
+  margin-left: auto;
   display: flex;
   gap: 40px;
 }
