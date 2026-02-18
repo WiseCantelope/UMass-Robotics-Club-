@@ -28,7 +28,7 @@ transform: translateX(-50%);
 body {
   margin: 0;
   padding-top: 90px;   /* Push content below fixed banner */
-  background: #f6f6f6;
+  background: #ff7431;
   font-family: Arial, sans-serif;
   color: #222;
 }
@@ -63,7 +63,7 @@ html {
 
 body {
   margin: 0;
-  background: #f6f6f6;
+  background: #ff7431;
   font-family: Arial, sans-serif;
   color: #222;
 }
