@@ -7,7 +7,17 @@
   top: 0;
   width: 100%;
   height: 90px;
-  background-color: #ff6a00; /* your orange */
+  .alt {
+  background-color: #ff6a00;
+}
+  .alt,
+.alt h1,
+.alt h2,
+.alt h3,
+.alt p,
+.alt li {
+  color: white;
+}
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,15 +32,21 @@
 }
 
 /* ===== Nav ===== */
+nav {
+  display: flex;
+  gap: 40px;
+}
+
 nav a {
-  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: white;
+  font-family: inherit; /* Matches site font */
 }
 
 nav a.active {
-  text-decoration: underline;
+  border-bottom: 2px solid white;
 }
 
 html {
@@ -68,6 +84,11 @@ body {
 }
 
 /* ===== Sections ===== */
+
+.section {
+  padding: 80px 40px;
+}
+
 .section {
   max-width: 900px;
   margin: 4rem auto;
