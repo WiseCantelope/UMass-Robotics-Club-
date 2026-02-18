@@ -16,7 +16,7 @@
 .alt h3,
 .alt p,
 .alt li {
-  color: white;
+  color: orange;
 }
   display: flex;
   align-items: center;
