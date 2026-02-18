@@ -123,3 +123,14 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.centered {
+  text-align: center;
+}
+
+.mission-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
