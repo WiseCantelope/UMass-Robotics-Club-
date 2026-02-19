@@ -167,6 +167,12 @@ html {
 
 .centered {
   text-align: center;
+  color: white;
+}
+
+.centered h1,
+.centered h2 {
+  color: white;
 }
 
 .mission-text {
@@ -174,4 +180,5 @@ html {
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.6;
+  color: white;
 }
