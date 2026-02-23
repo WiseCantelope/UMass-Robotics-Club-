@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 10px;              /* shrink overall logo height */
+  height: 30px;              /* enlarged logo height */
   display: flex;
   align-items: center;
   margin-top: 5px;            /* push it down to align with titles */
