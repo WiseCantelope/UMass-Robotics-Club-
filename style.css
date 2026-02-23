@@ -1,3 +1,6 @@
+/* import open sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 .banner {
   position: fixed;
   top: 0;
@@ -5,8 +8,8 @@
   height: 90px;
   background-color: white; /* reset to white */
   display: flex;
-  align-items: flex-start;
-  padding: 10px 40px 0 40px;
+  align-items: center;              /* center vertically */
+  padding: 20px 40px 0 40px;        /* more top padding */
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -19,14 +22,25 @@
   font-size: 1.8rem;
   color: black;
   font-family: inherit;
+  font-weight: 700; /* bold title */
 }
 
 body {
   margin: 0;
   padding-top: 90px;   /* Push content below fixed banner */
   background: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: black;
+}
+
+/* make all text default to Open Sans */
+* {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* bold all headings for emphasis */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
 }
 
 .logo {
@@ -39,12 +53,13 @@ body {
 nav {
   margin-left: auto;
   display: flex;
-  gap: 40px;
+  gap: 60px;           /* more room for additional links */
+  align-items: center; /* keep links vertically centered */
 }
 
 nav a {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.3rem;      /* slightly bigger */
+  font-weight: 700;       /* bold links */
   text-decoration: none;
   color: black;
   font-family: inherit; /* Matches site font */
