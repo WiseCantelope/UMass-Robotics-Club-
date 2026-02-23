@@ -12,6 +12,7 @@
   padding: 20px 40px 0 40px;        /* more top padding */
   box-sizing: border-box;
   z-index: 1000;
+  border-bottom: 1px solid black;   /* subtle separator */
 }
 
 .page-title {
