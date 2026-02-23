@@ -44,9 +44,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 30px;
+  height: 10px;              /* shrink overall logo height */
   display: flex;
   align-items: center;
+  margin-top: 5px;            /* push it down to align with titles */
+}
+
+/* ensure images inside scale with container */
+.logo img {
+  height: 100%;
+  width: auto;
 }
 
 /* ===== Nav ===== */
