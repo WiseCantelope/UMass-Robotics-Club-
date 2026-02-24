@@ -100,6 +100,15 @@ html {
   max-width: 700px;
 }
 
+/* responsive image used as homepage title */
+.hero .logo-text img {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 80%;
+  max-width: 720px;
+  height: auto;
+}
+
 /* ===== Sections ===== */
 
 .section {
