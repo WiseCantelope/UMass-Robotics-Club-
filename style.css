@@ -237,11 +237,11 @@ html {
   }
 
   nav {
-    gap: 25px;
+    gap: 12px;
   }
 
   nav a {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -260,11 +260,11 @@ html {
   }
 
   nav {
-    gap: 15px;
+    gap: 8px;
   }
 
   nav a {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 
   .hero {
