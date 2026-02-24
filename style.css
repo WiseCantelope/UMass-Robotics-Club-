@@ -9,7 +9,7 @@
   background-color: white; /* reset to white */
   display: flex;
   align-items: center;              /* center vertically */
-  padding: 20px 40px 0 40px;        /* more top padding */
+  padding: 0 40px;                  /* allow full 90px vertical space for perfect centering */
   box-sizing: border-box;
   z-index: 1000;
   border-bottom: 1px solid black;   /* subtle separator */
@@ -46,11 +46,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 40px;           /* increased single-image logo height */
   display: block;
   width: auto;            /* preserve aspect ratio */
-  margin: 0;              /* reset margins so align-self centers precisely */
-  align-self: center;     /* vertically center inside .banner (flex item) */
+  margin: 0;              /* reset margins */
+}
+
+/* header logo: larger and vertically centered within the 90px banner */
+.banner .logo {
+  height: 50px;
+}
+
+/* keep the in-page/logo-break image larger and centered in its section */
+.image-section .logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ===== Nav ===== */
