@@ -45,21 +45,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 30px;              /* enlarged logo height */
+  position: relative;
+  height: 50px;              /* make container tall enough for larger arm */
   display: flex;
   align-items: center;
-  margin-top: 5px;            /* push it down to align with titles */
+  margin-top: 5px;           /* push it down to align with titles */
 }
 
-/* ensure images inside scale with container */
+/* ensure images inside are block-level; sizing handled per-image */
 .logo img {
-  height: 100%;
   width: auto;
+  display: block;
 }
 
-/* small spacing between logo icon and text */
+/* arm (first image) larger */
 .logo img:first-child {
-  margin-right: 1px;
+  height: 50px;
+}
+
+/* place text inside the bend of the arm */
+.logo img:last-child {
+  position: absolute;
+  height: 30px;
+  left: 18px; /* adjust to sit inside arm bend */
+  top: 10px;  /* fine-tune vertical placement */
 }
 
 /* ===== Nav ===== */
