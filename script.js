@@ -6,7 +6,12 @@ if ('scrollRestoration' in history) {
 // Ensure page starts at top on load so banner remains stable
 window.addEventListener('load', () => {
   // run after load to override any browser automatic scrolling
-  setTimeout(() => window.scrollTo(0, 0), 0);
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+    // reveal visible sections immediately without waiting for user scroll
+    // (this triggers the animation but doesn't change layout)
+    if (typeof revealOnScroll === 'function') revealOnScroll();
+  }, 0);
 });
 
 const reveals = document.querySelectorAll(".reveal");
