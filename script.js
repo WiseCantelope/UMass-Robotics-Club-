@@ -1,3 +1,11 @@
+// Prevent browser from restoring scroll position on reload (avoids layout shifts)
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+// Ensure page starts at top on load so banner remains stable
+window.scrollTo(0, 0);
+
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
@@ -12,5 +20,5 @@ function revealOnScroll() {
   });
 }
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+// Only reveal when the user scrolls (prevents movement on reload)
+window.addEventListener("scroll", revealOnScroll, { passive: true });
