@@ -45,30 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  position: relative;
-  height: 50px;              /* make container tall enough for larger arm */
-  display: flex;
-  align-items: center;
-  margin-top: 5px;           /* push it down to align with titles */
-}
-
-/* ensure images inside are block-level; sizing handled per-image */
-.logo img {
-  width: auto;
-  display: block;
-}
-
-/* arm (first image) larger */
-.logo img:first-child {
-  height: 50px;
-}
-
-/* place text inside the bend of the arm */
-.logo img:last-child {
-  position: absolute;
-  height: 30px;
-  left: 18px; /* adjust to sit inside arm bend */
-  top: 10px;  /* fine-tune vertical placement */
+  height: 30px;           /* single-image logo height */
+  display: inline-block;
+  width: auto;            /* preserve aspect ratio */
+  margin-top: 5px;        /* align with page titles */
+  vertical-align: middle;
 }
 
 /* ===== Nav ===== */
@@ -162,12 +143,12 @@ html {
   padding: 4rem 0;
 }
 
-.image-section img {
+.image-section img:not(.logo) {
   width: 200px;
   transition: transform 0.6s ease;
 }
 
-.image-section img:hover {
+.image-section img:not(.logo):hover {
   transform: scale(1.1);
 }
 
