@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  height: 30px;           /* single-image logo height */
+  height: 40px;           /* increased single-image logo height */
   display: block;
   width: auto;            /* preserve aspect ratio */
   margin: 0;              /* reset margins so align-self centers precisely */
