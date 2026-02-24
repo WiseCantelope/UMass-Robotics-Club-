@@ -32,6 +32,7 @@ body {
   background: white;
   font-family: 'Open Sans', Arial, sans-serif;
   color: black;
+  overflow-anchor: none; /* prevent browser scroll anchoring on layout shifts */
 }
 
 /* make all text default to Open Sans */

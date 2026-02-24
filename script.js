@@ -4,7 +4,10 @@ if ('scrollRestoration' in history) {
 }
 
 // Ensure page starts at top on load so banner remains stable
-window.scrollTo(0, 0);
+window.addEventListener('load', () => {
+  // run after load to override any browser automatic scrolling
+  setTimeout(() => window.scrollTo(0, 0), 0);
+});
 
 const reveals = document.querySelectorAll(".reveal");
 
