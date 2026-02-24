@@ -239,10 +239,15 @@ html {
   nav {
     gap: 16px;
     margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
   }
 
   nav a {
     font-size: 0.95rem;
+    text-align: center;
+    white-space: pre-line;
   }
 }
 
@@ -263,10 +268,15 @@ html {
   nav {
     gap: 10px;
     margin-left: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
   }
 
   nav a {
     font-size: 0.8rem;
+    text-align: center;
+    white-space: pre-line;
   }
 
   .hero {
