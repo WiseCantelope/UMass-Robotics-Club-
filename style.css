@@ -126,8 +126,19 @@ html {
   padding: 80px 40px;
 }
 
-.section {
-  max-width: 900px;
+/* contact page list formatting */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+.contact-list li i {
+  margin-right: 0.5rem;
+  color: #333;
+}
   margin: 4rem auto;
   padding: 0 1.5rem;
 }
