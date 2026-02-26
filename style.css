@@ -139,6 +139,9 @@ html {
   margin-right: 0.5rem;
   color: #333;
 }
+
+.section {
+  max-width: 900px;
   margin: 4rem auto;
   padding: 0 1.5rem;
 }
